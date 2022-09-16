@@ -18,7 +18,7 @@
           <div class="top-Container">
             <div class="timer-container">
               <span class="timer">Time:</span>
-              <span id="timer">5</span>
+              <span id="timer">30</span>
             </div>
             <h1>♤ Ace of Spades ♤</h1>
             <div class="timer-container">
@@ -27,24 +27,33 @@
             </div>
           </div>
           <div class="container">
-            <div class="flip-card">
+            <div id="card-one" class="flip-card">
               <div class="inner">
                 <div class="front">
-                  <img src="/img/logo.png" alt="" />
+                  <img
+                    src="./img/Brown_Mascot_Gamer_Logo-removebg-preview.png"
+                    alt=""
+                  />
                 </div>
                 <div class="back">
-                  <div></div>
+                  <div id="newCard1"></div>
                   <div class="back-header"></div>
                 </div>
               </div>
             </div>
-            <div class="flip-card">
+            <div class="display">
+              <span id="correct"></span>
+            </div>
+            <div id="card-two" class="flip-card">
               <div class="inner">
                 <div class="front">
-                  <img src="/img/logo.png" alt="" />
+                  <img
+                    src="./img/Brown_Mascot_Gamer_Logo-removebg-preview.png"
+                    alt=""
+                  />
                 </div>
                 <div class="back">
-                  <div>HELLO</div>
+                  <div id="newCard2"></div>
                   <div class="back-header"></div>
                 </div>
               </div>
@@ -55,26 +64,30 @@
 
       <section>
         <div class="remainingCards">
-          <span>1</span>
-          <span>1</span>
+          <span id="houseDeckCount">1</span>
+          <span id="playerDeckCount">1</span>
         </div>
         <div class="score-highscore">
           <div class="Score">
             <span>Score:</span>
             <span id="score">0</span>
           </div>
-          <div class="highscore">HighScore:</div>
+          <div class="highscore">
+            <div class="high-container">
+              <span>Highscore:</span>
+              <span id="highScore"></span>
+            </div>
+          </div>
         </div>
         <div class="button-container">
           <div class="button">
             <h2>New Game</h2>
-            <a id="start-btn" href="#" class="start">Start</a>
+            <button id="start-btn" class="start">Start</button>
             <div class="center-button">
-              <a href="#" class="higher">H</a>
-              <!-- <button class="higher">H</button> -->
-              <button class="lower">L</button>
+              <button id="higher" class="higher">H</button>
+              <button id="lower" class="lower">L</button>
             </div>
-            <a id="reset" href="#" class="reset">Reset</a>
+            <button id="reset" href="#" class="reset">Reset</button>
           </div>
         </div>
       </section>
@@ -83,7 +96,6 @@
     <footer>
       <div>FOOTER</div>
     </footer>
-
     <script src="app.js"></script>
   </body>
 </html>
