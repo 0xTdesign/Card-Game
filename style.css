@@ -46,8 +46,10 @@ h1 {
   padding: 10px;
 }
 
-.timer {
+.timer-container {
   margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--text);
 }
 
 .bottom-container {
@@ -68,7 +70,7 @@ h1 {
 /* Flipped Cards */
 
 .container {
-  margin: 0 1em;
+  margin: 10px 1em;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-around;
@@ -273,10 +275,16 @@ footer div {
 }
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .timer-container {
+    font-size: 0.9rem;
+  }
   .button-container {
     width: 300;
-    margin: 0px auto;
-    padding: 0 auto;
+    margin: 46px auto;
+    padding: 0px auto;
     border: 1px solid #2d2d2d;
     display: grid;
     justify-content: center;
