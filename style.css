@@ -52,6 +52,12 @@ h1 {
   color: var(--text);
 }
 
+.remainingCards {
+  color: var(--text);
+  display: flex;
+  justify-content: space-around;
+}
+
 .bottom-container {
   margin: 0 auto;
   padding: 0 auto;
@@ -70,6 +76,7 @@ h1 {
 /* Flipped Cards */
 
 .container {
+  border: 1px solid #1e1e1e;
   margin: 10px 1em;
   display: flex;
   /* flex-wrap: wrap; */
@@ -283,7 +290,7 @@ footer div {
   }
   .button-container {
     width: 300;
-    margin: 46px auto;
+    margin: 20px auto;
     padding: 0px auto;
     border: 1px solid #2d2d2d;
     display: grid;

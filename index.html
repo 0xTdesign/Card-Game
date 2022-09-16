@@ -23,7 +23,7 @@
             <h1>♤ Ace of Spades ♤</h1>
             <div class="timer-container">
               <span class="timer">Lives:</span>
-              <span class="timer">5</span>
+              <span id="live" class="timer">5</span>
             </div>
           </div>
           <div class="container">
@@ -33,7 +33,7 @@
                   <img src="/img/logo.png" alt="" />
                 </div>
                 <div class="back">
-                  <div>HELLO</div>
+                  <div></div>
                   <div class="back-header"></div>
                 </div>
               </div>
@@ -54,20 +54,27 @@
       </section>
 
       <section>
+        <div class="remainingCards">
+          <span>1</span>
+          <span>1</span>
+        </div>
         <div class="score-highscore">
-          <div class="Score">Score</div>
-          <div class="highscore">HighScore</div>
+          <div class="Score">
+            <span>Score:</span>
+            <span id="score">0</span>
+          </div>
+          <div class="highscore">HighScore:</div>
         </div>
         <div class="button-container">
           <div class="button">
             <h2>New Game</h2>
-            <a href="#" class="start">Start</a>
+            <a id="start-btn" href="#" class="start">Start</a>
             <div class="center-button">
               <a href="#" class="higher">H</a>
               <!-- <button class="higher">H</button> -->
               <button class="lower">L</button>
             </div>
-            <a href="#" class="reset">Reset</a>
+            <a id="reset" href="#" class="reset">Reset</a>
           </div>
         </div>
       </section>
@@ -76,5 +83,7 @@
     <footer>
       <div>FOOTER</div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
